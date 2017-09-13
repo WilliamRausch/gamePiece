@@ -7,5 +7,6 @@ public class GamePiece {
     gamepiece.unfreeze();
     gamepiece.getPositionX();
     gamepiece.getPositionY();
+    gamepiece.move(1,2);
     }
 }

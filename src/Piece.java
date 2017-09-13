@@ -2,15 +2,19 @@ public class Piece {
     int positionX;
     int positionY;
     boolean frozen;
+    String name;
+    String color;
     public Piece(){
         this.positionX = 0;
         this.positionY = 0;
         this.frozen = false;
     }
-    public Piece(int positionX, int positionY, boolean frozen){
+    public Piece(int positionX, int positionY, boolean frozen, String name, String color){
         this.positionX = positionX;
         this.positionY = positionY;
         this.frozen = frozen;
+        this.name = name;
+        this.color = color;
     }
     public void move(int xMove, int yMove){
         if(!frozen) {
@@ -41,5 +45,10 @@ public class Piece {
     public boolean isFrozen(){
         return frozen;
     }
-
+    public String getColor(){
+        return color;
+    }
+    public String getName(){
+        return name;
+    }
 }
